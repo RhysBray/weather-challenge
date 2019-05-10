@@ -1,0 +1,6 @@
+@import "../../global.scss";
+
+.weather-section {
+  @extend %flex-centered;
+  width: 100%;
+}

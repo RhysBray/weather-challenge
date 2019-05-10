@@ -1,0 +1,13 @@
+//variables
+$p-color: rgb(136, 237, 255);
+$s-color: blue;
+$t-color: rgb(131, 255, 203);
+
+$base-space: 10px;
+
+//inheritance
+%flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

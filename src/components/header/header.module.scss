@@ -1,0 +1,12 @@
+@import "../../global.scss";
+
+.header {
+  @extend %flex-centered;
+  width: 100vw;
+  height: 15vh;
+  background-color: $p-color;
+  margin-bottom: $base-space;
+  .h1 {
+    font-size: 40pt;
+  }
+}
