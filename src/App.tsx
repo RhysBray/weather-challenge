@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.scss";
 import WeatherCardContainer from "./containers/weatherCardContainer";
-import HeaderContainer from "./components/header";
+import HeaderContainer from "./containers/headerContainer";
 import { Provider } from "react-redux";
 import store from "./store";
 

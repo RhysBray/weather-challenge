@@ -3,6 +3,20 @@
 .weather-card {
   @extend %flex-centered;
   flex-direction: column;
-  width: 15%;
+  width: 20vw;
+  height: 20vw;
   border: black 1pt solid;
+  padding: $base-space * 2;
+  background-color: $s-color;
+  border-radius: 50px;
+  .content {
+    width: 100%;
+    @extend %flex-centered;
+    justify-content: space-between;
+    padding: $base-space * 2;
+    .categories {
+    }
+    .stats {
+    }
+  }
 }

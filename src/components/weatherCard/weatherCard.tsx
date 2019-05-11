@@ -13,10 +13,20 @@ class WeatherCard extends React.Component<IProps, IState> {
     return (
       <article className={styles["weather-card"]}>
         <h2>{this.props.weather.name}</h2>
-        <p>Current temp: {this.props.weather.main.temp}</p>
-        <p>Min-temp: {this.props.weather.main.temp_min}</p>
-        <p>Max-temp: {this.props.weather.main.temp_max}</p>
-        <p>Humidity: {this.props.weather.main.humidity}</p>
+        <div className={styles.content}>
+          <div className={styles.categories}>
+            <p>Current temp: </p>
+            <p>Min-temp: </p>
+            <p>Max-temp: </p>
+            <p>Humidity: </p>
+          </div>
+          <div className={styles.stats}>
+            <p>{this.props.weather.main.temp} C</p>
+            <p>{this.props.weather.main.temp_min} C</p>
+            <p>{this.props.weather.main.temp_max} C</p>
+            <p>{this.props.weather.main.humidity}</p>
+          </div>
+        </div>
       </article>
     );
   }
