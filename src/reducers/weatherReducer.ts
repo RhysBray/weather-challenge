@@ -1,5 +1,102 @@
-import { object } from "prop-types";
-
+const info = {
+  cnt: 3,
+  list: [
+    {
+      coord: { lon: -0.09, lat: 51.51 },
+      sys: {
+        type: 1,
+        id: 1414,
+        message: 0.0094,
+        country: "GB",
+        sunrise: 1557548118,
+        sunset: 1557603495
+      },
+      weather: [
+        { id: 521, main: "Rain", description: "shower rain", icon: "09d" }
+      ],
+      main: {
+        temp: 13.59,
+        pressure: 1021,
+        humidity: 66,
+        temp_min: 11,
+        temp_max: 16.11
+      },
+      visibility: 10000,
+      wind: { speed: 3.6, deg: 70 },
+      clouds: { all: 24 },
+      dt: 1557580937,
+      id: 2643744,
+      name: "City of London"
+    },
+    {
+      coord: { lon: -82.19, lat: 36.6 },
+      sys: {
+        type: 1,
+        id: 6178,
+        message: 0.0082,
+        country: "US",
+        sunrise: 1557570317,
+        sunset: 1557620704
+      },
+      weather: [
+        { id: 501, main: "Rain", description: "moderate rain", icon: "10d" },
+        {
+          id: 300,
+          main: "Drizzle",
+          description: "light intensity drizzle",
+          icon: "09d"
+        }
+      ],
+      main: {
+        temp: 16.76,
+        pressure: 1017,
+        humidity: 100,
+        temp_min: 13.89,
+        temp_max: 18.89
+      },
+      visibility: 16093,
+      wind: { speed: 2.6, deg: 100 },
+      clouds: { all: 90 },
+      dt: 1557580937,
+      id: 4749005,
+      name: "City of Bristol"
+    },
+    {
+      coord: { lon: -85.16, lat: 34.26 },
+      sys: {
+        type: 1,
+        id: 5680,
+        message: 0.0093,
+        country: "US",
+        sunrise: 1557571319,
+        sunset: 1557621128
+      },
+      weather: [
+        { id: 500, main: "Rain", description: "light rain", icon: "10d" },
+        {
+          id: 211,
+          main: "Thunderstorm",
+          description: "thunderstorm",
+          icon: "11d"
+        },
+        { id: 701, main: "Mist", description: "mist", icon: "50d" }
+      ],
+      main: {
+        temp: 20.24,
+        pressure: 1015,
+        humidity: 88,
+        temp_min: 18.89,
+        temp_max: 21.11
+      },
+      visibility: 16093,
+      wind: { speed: 1.5, deg: 200 },
+      clouds: { all: 90 },
+      dt: 1557580937,
+      id: 4219762,
+      name: "Rome"
+    }
+  ]
+};
 //interface
 // export interface {
 //   location: string;
@@ -11,10 +108,10 @@ import { object } from "prop-types";
 
 export interface IWeatherCard {
   coord?: Object;
-  weather?: [
+  weather: [
     {
       id?: number;
-      main?: string;
+      main: string;
       description?: string;
       icon?: string;
     }

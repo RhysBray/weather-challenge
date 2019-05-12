@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.question {
+  width: 100vw;
+  height: 100vh;
+  background-color: $p-color;
+  @extend %flex-centered;
+  flex-direction: column;
+  .ask {
+    font-size: 30pt;
+    margin-bottom: $base-space;
+  }
+  .answer {
+    width: 40%;
+    height: 1.5em;
+    font-size: 30pt;
+    text-align: center;
+    border: solid $accent 2pt;
+    color: $text-color;
+  }
+}
+.in-correct {
+  background-color: rgb(253, 81, 81);
+}
+.correct {
+  background-color: rgb(59, 134, 59);
+}

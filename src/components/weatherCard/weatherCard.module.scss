@@ -3,20 +3,64 @@
 .weather-card {
   @extend %flex-centered;
   flex-direction: column;
-  width: 20vw;
-  height: 20vw;
-  border: black 1pt solid;
+  width: 30vw;
+  height: 30vw;
+  border: $accent 3pt solid;
   padding: $base-space * 2;
-  background-color: $s-color;
   border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   .content {
-    width: 100%;
     @extend %flex-centered;
-    justify-content: space-between;
+    flex-direction: column;
     padding: $base-space * 2;
-    .categories {
-    }
+    border-radius: 25px;
+    background-color: rgba(240, 255, 255, 0.3);
+    box-shadow: 0px 0px 20px 20px rgba(240, 255, 255, 0.3);
+    width: 65%;
+    height: 65%;
+
     .stats {
+      width: 100%;
+      @extend %flex-centered;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .categories {
+        width: 65%;
+        text-align: right;
+        padding-right: $base-space/2;
+      }
+      .values {
+        width: 35%;
+        text-align: left;
+        padding-left: $base-space/2;
+      }
     }
   }
+}
+.fog {
+  background-image: url("../../assets/gifs/fog.gif");
+}
+.sun {
+  background-image: url("../../assets/gifs/sun.gif");
+}
+.mist {
+  background-image: url("../../assets/gifs/mist.gif");
+}
+.rain {
+  background-image: url("../../assets/gifs/rain.gif");
+}
+.snow {
+  background-image: url("../../assets/gifs/snow.gif");
+}
+.thunderstorm {
+  background-image: url("../../assets/gifs/thunderstorm.gif");
+}
+.clear {
+  background-image: url("../../assets/gifs/clear.gif");
+}
+.clouds {
+  background-image: url("../../assets/gifs/clouds.gif");
 }

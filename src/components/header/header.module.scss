@@ -2,12 +2,18 @@
 
 .header {
   @extend %flex-centered;
+  justify-content: flex-start;
   width: 100vw;
   height: 15vh;
   background-color: $p-color;
   margin-bottom: $base-space;
+  border-top: $accent solid 2pt;
   border-bottom: $accent solid 2pt;
+
   .h1 {
     font-size: 40pt;
+    font-weight: 300;
+    letter-spacing: -3px;
+    padding-left: $base-space * 2;
   }
 }
