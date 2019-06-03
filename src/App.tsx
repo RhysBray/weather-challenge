@@ -2,8 +2,7 @@ import React from "react";
 import "./App.scss";
 import WeatherCardContainer from "./containers/weatherCardContainer";
 import HeaderContainer from "./containers/headerContainer";
-import QuestionContainer from "./containers/questionContainer";
-import PlayerContainer from "./containers/playerContainer";
+// import QuestionContainer from "./containers/questionContainer";
 import { Provider } from "react-redux";
 import store from "./store";
 
@@ -13,7 +12,7 @@ const App: React.FC = () => {
       <div className="background" />
       <HeaderContainer />
       <WeatherCardContainer />
-      <QuestionContainer />
+      {/* <QuestionContainer /> */}
     </Provider>
   );
 };
